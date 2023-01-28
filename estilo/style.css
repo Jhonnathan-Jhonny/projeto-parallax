@@ -9,27 +9,48 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+section {
     text-align: center;
-    height: 800px;
+    height: 700px;
+}
+
+#img01 {
     background-image: url(../imagens/predios.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.container {
-    position: relative;
+#img02 {
+    background: black url(../imagens/luzes.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 
-section p.conteudo {
+#img03 {
+    background: black url(../imagens/transito.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+#img04 {
+    background: black url(../imagens/cidade.jpg) center bottom no-repeat fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    overflow-x: auto;
+}
+
+section h1.titulo {
     position: absolute;
-    background-color: lightslategray;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
     font-variant: small-caps;
-    font-size: 1.5em;
+    font-size: 2em;
+    letter-spacing: 0.4em;
 
     padding: 20px;
-    width: 200px;
+    width: 400px;
 
     left: 50%;
     top: 50%;
@@ -38,6 +59,89 @@ section p.conteudo {
 }
 
 div {
-    background-color: lightslategray;
-    padding: 100px;
+    background-color: lightgray;
+    padding: 50px;
+    min-height: 250px;
+    min-width: 250px;
+    text-align: center;
+}
+
+div > h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.conteudo {
+    position: absolute;
+    color: white;
+    letter-spacing: 0.4em;
+    font-size: 2em;
+    font-weight: bolder;
+    font-variant: small-caps;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    font-size: 1em;
+    background-color: white;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+thead {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+#tamanho {
+    min-height: 400px;
+    min-width: 250px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+}
+
+caption {
+    font-size: 2em;
+}
+
+tbody tr:nth-child(2n){
+    background-color: lightgray;
+}
+
+tfoot {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer  a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: aqua;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+footer a:active {
+    color: pink;
 }
