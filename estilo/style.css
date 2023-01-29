@@ -38,7 +38,6 @@ section {
 
 .container {
     position: relative;
-    overflow-x: auto;
 }
 
 section h1.titulo {
@@ -46,11 +45,12 @@ section h1.titulo {
     background-color: rgba(0, 0, 0, 0.884);
     color: white;
     font-variant: small-caps;
-    font-size: 2em;
-    letter-spacing: 0.4em;
+    font-size: 4.5vw;
+    letter-spacing: 0.3em;
 
     padding: 20px;
-    width: 400px;
+    width: 50vw;
+
 
     left: 50%;
     top: 50%;
@@ -95,6 +95,7 @@ table {
     left: 50%;
 
     transform: translate(-50%, -50%);
+    overflow-x: auto;
 }
 
 thead {
